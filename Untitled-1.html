@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wax t9l9ti?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 100px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .no {
+            background-color: #f44336;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>wax t9l9ti? ❤️</h1>
+    <button class="yes" onclick="alert('mat9l9ix! 😊')">Yes</button>
+    <button class="no">No</button>
+
+    <script>
+        const noButton = document.querySelector('.no');
+        noButton.style.top = "50%";
+        noButton.style.left = "50%";
+
+        noButton.addEventListener('mouseover', () => {
+            const maxX = window.innerWidth - noButton.offsetWidth;
+            const maxY = window.innerHeight - noButton.offsetHeight;
+
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            noButton.style.top = randomY + 'px';
+            noButton.style.left = randomX + 'px';
+        });
+
+        // Adjust layout for small screens
+        window.addEventListener('resize', () => {
+            noButton.style.top = "50%";
+            noButton.style.left = "50%";
+        });
+    </script>
+</body>
+</html>
